@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    
+  }
+  
+  /*####### Header #####*/
+  Header {
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: flex-end;*/
+    padding: 30px;
+    text-align: center;
+    background-color:#ffffff;
+    
+    border-bottom: solid 1px;
+
+  }
+  div.name{
+    color: #ffffff;
+    background-color: teal;
+    font-family: 'Times New Roman', Times, serif;
+    
+    }
+  
+  /* Style the top navigation bar */
+  .navbar a{
+      font-family: Arial, Helvetica, sans-serif;
+      color: #777777;
+      text-decoration: none;
+  }
+
+   .navbar{
+  
+  }
+  /* Style the navigation bar links 
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    
+    
+  }*/
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color:teal;
+    color: yellow;
+  }
+
+  /*######## Content #########*/
+  /*Whole Content Body*/
+  .content{
+  margin:100px 300px;
+  border: solid 0.25px;
+  padding: 20px;
+  }
+  /*Heading Abot Me*/
+  h1{
+      color: teal;
+  }
+ /*Image floated to left and resized*/
+ img {
+     width: 20%;
+     height: 20%;
+     float: left;
+     padding: 20px;
+ }
+
+  /*####### Footer ##########*/
+  footer{
+    text-align: center;
+    font-size: 10px;
+    background-color: #666666;
+    border-top: solid thick teal;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    width :100%;
+ }
+  .copyright{
+      padding-top: 20px;
+  }
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
