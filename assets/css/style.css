@@ -1,51 +1,52 @@
 * {
     box-sizing: border-box;
   }
+
+  /*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }*/
   
-  
+  /*####### Body #####*/
   /* Style the body */
   body {
     font-family: Arial;
-    
+    background-image: url("crossline-dots.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
   }
-  
+    
+
   /*####### Header #####*/
   Header {
+    /*setting header as flexbox and setting space b/w name and links*/
     display: flex;
-    justify-content: space-between;
-    /*justify-content: flex-end;*/
-    padding: 30px;
-    text-align: center;
+    justify-content: space-around;
     background-color:#ffffff;
-    
-    border-bottom: solid 1px;
-
+    line-height: 70px;
+    /*setting header to top of the pade*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
   }
-  div.name{
+
+    /* Style the top name in header */
+  .name{
     color: #ffffff;
     background-color: teal;
     font-family: 'Times New Roman', Times, serif;
-    
-    }
-  
-  /* Style the top navigation bar */
-  .navbar a{
-      font-family: Arial, Helvetica, sans-serif;
-      color: #777777;
-      text-decoration: none;
+    font-size: 25px;
   }
 
-   .navbar{
-  
+    /* Style the top navigation bar */
+  .navbar a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    text-decoration: none;
   }
-  /* Style the navigation bar links 
-  .navbar a {
-    color: white;
-    padding: 14px 20px;
-    
-    
-  }*/
-  
+
   /* Change color on hover */
   .navbar a:hover {
     background-color:teal;
@@ -54,22 +55,24 @@
 
   /*######## Content #########*/
   /*Whole Content Body*/
-  .content{
-  margin:100px 300px;
-  border: solid 0.25px;
-  padding: 20px;
+  section.content{
+    background-color: white;
+    margin:100px 300px;
+    padding: 20px;
   }
-  /*Heading Abot Me*/
+
+  /*Heading About Me*/
   h1{
-      color: teal;
+    color: teal;
   }
  /*Image floated to left and resized*/
  img {
-     width: 20%;
-     height: 20%;
-     float: left;
-     padding: 20px;
+    width: 20%;
+    height: 20%;
+    float: left;
+    padding: 20px;
  }
+
 
   /*####### Footer ##########*/
   footer{
@@ -78,13 +81,47 @@
     background-color: #666666;
     border-top: solid thick teal;
     height: 40px;
+    padding-top: 20px;
     position: fixed;
     bottom: 0px;
+    left: 0px;
     width :100%;
  }
-  .copyright{
-      padding-top: 20px;
+  
+
+ /*####### Portfolio ##########*/
+ /*Setting flexbox as the container for images*/
+ .porfolioimageflexcontainer{
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-around;
+   justify-content: space-around;
+ }
+
+/*Portfolio image*/
+  .portfolioimg{ 
+    height: 300px;
+    width: 400px;
   }
+
+  /*Positioning the image captions based on image position*/ 
+ .relative{
+    position: relative;
+  }
+
+  .absolute{
+    position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    top: 226px;
+    left: 20px;
+    width: 90%;
+    line-height: 40px;
+  
+}
+
+  
 
   
   
